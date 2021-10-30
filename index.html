@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Twitter</title>
+    <link rel="mask-icon" sizes="any" href="https://abs.twimg.com/responsive-web/client-web/icon-svg.168b89d5.svg" color="#00BA7C">
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="192x192" href="https://abs.twimg.com/responsive-web/client-web/icon-ios.b1fc7275.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="link-parent">
+                <nav class="nav-bar">
+
+                    <div class="header-parent">
+
+                        <a href="#" class="icon-link">
+                            <div>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-16y2uox r-8kz0gk r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-yc9v9c">
+                                    <g>
+                                        <path
+                                            d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="header-link active">
+                            <div>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                                    <g>
+                                        <path
+                                            d="M22.58 7.35L12.475 1.897c-.297-.16-.654-.16-.95 0L1.425 7.35c-.486.264-.667.87-.405 1.356.18.335.525.525.88.525.16 0 .324-.038.475-.12l.734-.396 1.59 11.25c.216 1.214 1.31 2.062 2.66 2.062h9.282c1.35 0 2.444-.848 2.662-2.088l1.588-11.225.737.398c.485.263 1.092.082 1.354-.404.263-.486.08-1.093-.404-1.355zM12 15.435c-1.795 0-3.25-1.455-3.25-3.25s1.455-3.25 3.25-3.25 3.25 1.455 3.25 3.25-1.455 3.25-3.25 3.25z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="text">
+                                    Accueil
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="header-link">
+                            <div>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                                    <g>
+                                        <path
+                                            d="M21 7.337h-3.93l.372-4.272c.036-.412-.27-.775-.682-.812-.417-.03-.776.27-.812.683l-.383 4.4h-6.32l.37-4.27c.037-.413-.27-.776-.68-.813-.42-.03-.777.27-.813.683l-.382 4.4H3.782c-.414 0-.75.337-.75.75s.336.75.75.75H7.61l-.55 6.327H3c-.414 0-.75.336-.75.75s.336.75.75.75h3.93l-.372 4.272c-.036.412.27.775.682.812l.066.003c.385 0 .712-.295.746-.686l.383-4.4h6.32l-.37 4.27c-.036.413.27.776.682.813l.066.003c.385 0 .712-.295.746-.686l.382-4.4h3.957c.413 0 .75-.337.75-.75s-.337-.75-.75-.75H16.39l.55-6.327H21c.414 0 .75-.336.75-.75s-.336-.75-.75-.75zm-6.115 7.826h-6.32l.55-6.326h6.32l-.55 6.326z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="text">
+                                    Explorer
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="header-link">
+                            <div>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                                    <g>
+                                        <path
+                                            d="M21.697 16.468c-.02-.016-2.14-1.64-2.103-6.03.02-2.532-.812-4.782-2.347-6.335C15.872 2.71 14.01 1.94 12.005 1.93h-.013c-2.004.01-3.866.78-5.242 2.174-1.534 1.553-2.368 3.802-2.346 6.334.037 4.33-2.02 5.967-2.102 6.03-.26.193-.366.53-.265.838.102.308.39.515.712.515h4.92c.102 2.31 1.997 4.16 4.33 4.16s4.226-1.85 4.327-4.16h4.922c.322 0 .61-.206.71-.514.103-.307-.003-.645-.263-.838zM12 20.478c-1.505 0-2.73-1.177-2.828-2.658h5.656c-.1 1.48-1.323 2.66-2.828 2.66zM4.38 16.32c.74-1.132 1.548-3.028 1.524-5.896-.018-2.16.644-3.982 1.913-5.267C8.91 4.05 10.397 3.437 12 3.43c1.603.008 3.087.62 4.18 1.728 1.27 1.285 1.933 3.106 1.915 5.267-.024 2.868.785 4.765 1.525 5.896H4.38z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="text">
+                                    Notifications
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="header-link">
+                            <div>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                                    <g>
+                                        <path
+                                            d="M19.25 3.018H4.75C3.233 3.018 2 4.252 2 5.77v12.495c0 1.518 1.233 2.753 2.75 2.753h14.5c1.517 0 2.75-1.235 2.75-2.753V5.77c0-1.518-1.233-2.752-2.75-2.752zm-14.5 1.5h14.5c.69 0 1.25.56 1.25 1.25v.714l-8.05 5.367c-.273.18-.626.182-.9-.002L3.5 6.482v-.714c0-.69.56-1.25 1.25-1.25zm14.5 14.998H4.75c-.69 0-1.25-.56-1.25-1.25V8.24l7.24 4.83c.383.256.822.384 1.26.384.44 0 .877-.128 1.26-.383l7.24-4.83v10.022c0 .69-.56 1.25-1.25 1.25z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="text">
+                                    Messages
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="header-link">
+                            <div>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                                    <g>
+                                        <path
+                                            d="M19.9 23.5c-.157 0-.312-.05-.442-.144L12 17.928l-7.458 5.43c-.228.164-.53.19-.782.06-.25-.127-.41-.385-.41-.667V5.6c0-1.24 1.01-2.25 2.25-2.25h12.798c1.24 0 2.25 1.01 2.25 2.25v17.15c0 .282-.158.54-.41.668-.106.055-.223.082-.34.082zM12 16.25c.155 0 .31.048.44.144l6.71 4.883V5.6c0-.412-.337-.75-.75-.75H5.6c-.413 0-.75.338-.75.75v15.677l6.71-4.883c.13-.096.285-.144.44-.144z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="text">
+                                    Signets
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="header-link">
+                            <div>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                                    <g>
+                                        <path
+                                            d="M19.75 22H4.25C3.01 22 2 20.99 2 19.75V4.25C2 3.01 3.01 2 4.25 2h15.5C20.99 2 22 3.01 22 4.25v15.5c0 1.24-1.01 2.25-2.25 2.25zM4.25 3.5c-.414 0-.75.337-.75.75v15.5c0 .413.336.75.75.75h15.5c.414 0 .75-.337.75-.75V4.25c0-.413-.336-.75-.75-.75H4.25z">
+                                        </path>
+                                        <path
+                                            d="M17 8.64H7c-.414 0-.75-.337-.75-.75s.336-.75.75-.75h10c.414 0 .75.335.75.75s-.336.75-.75.75zm0 4.11H7c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h10c.414 0 .75.336.75.75s-.336.75-.75.75zm-5 4.11H7c-.414 0-.75-.335-.75-.75s.336-.75.75-.75h5c.414 0 .75.337.75.75s-.336.75-.75.75z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="text">
+                                    Listes
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="header-link">
+                            <div>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                                    <g>
+                                        <path
+                                            d="M12 11.816c1.355 0 2.872-.15 3.84-1.256.814-.93 1.078-2.368.806-4.392-.38-2.825-2.117-4.512-4.646-4.512S7.734 3.343 7.354 6.17c-.272 2.022-.008 3.46.806 4.39.968 1.107 2.485 1.256 3.84 1.256zM8.84 6.368c.162-1.2.787-3.212 3.16-3.212s2.998 2.013 3.16 3.212c.207 1.55.057 2.627-.45 3.205-.455.52-1.266.743-2.71.743s-2.255-.223-2.71-.743c-.507-.578-.657-1.656-.45-3.205zm11.44 12.868c-.877-3.526-4.282-5.99-8.28-5.99s-7.403 2.464-8.28 5.99c-.172.692-.028 1.4.395 1.94.408.52 1.04.82 1.733.82h12.304c.693 0 1.325-.3 1.733-.82.424-.54.567-1.247.394-1.94zm-1.576 1.016c-.126.16-.316.246-.552.246H5.848c-.235 0-.426-.085-.552-.246-.137-.174-.18-.412-.12-.654.71-2.855 3.517-4.85 6.824-4.85s6.114 1.994 6.824 4.85c.06.242.017.48-.12.654z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="text">
+                                    Profil
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="header-link">
+                            <div>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                                    <g>
+                                        <circle cx="17" cy="12" r="1.5"></circle>
+                                        <circle cx="12" cy="12" r="1.5"></circle>
+                                        <circle cx="7" cy="12" r="1.5"></circle>
+                                        <path
+                                            d="M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="text">
+                                    Plus
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <a href="" class="tweet-link">
+                        <div class="tweet-button">
+                            <div class="text">
+                                Tweeter
+                            </div>
+                            <div class="svg">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="r-jwli3a r-4qtqp9 r-yyyyoo r-1472mwg r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp"><g><path d="M8.8 7.2H5.6V3.9c0-.4-.3-.8-.8-.8s-.7.4-.7.8v3.3H.8c-.4 0-.8.3-.8.8s.3.8.8.8h3.3v3.3c0 .4.3.8.8.8s.8-.3.8-.8V8.7H9c.4 0 .8-.3.8-.8s-.5-.7-1-.7zm15-4.9v-.1h-.1c-.1 0-9.2 1.2-14.4 11.7-3.8 7.6-3.6 9.9-3.3 9.9.3.1 3.4-6.5 6.7-9.2 5.2-1.1 6.6-3.6 6.6-3.6s-1.5.2-2.1.2c-.8 0-1.4-.2-1.7-.3 1.3-1.2 2.4-1.5 3.5-1.7.9-.2 1.8-.4 3-1.2 2.2-1.6 1.9-5.5 1.8-5.7z"></path></g></svg>
+                            </div>
+                        </div>
+                    </a>
+                </nav>
+                <div class="account-parent">
+                    <a href="#" class="account">
+                        <div class="pdp">
+                            <img src="https://pbs.twimg.com/profile_images/1441660358033215492/7TfUqDtG_400x400.jpg"
+                                alt="">
+                        </div>
+                        <div class="username">
+                            <div class="nick">
+                                Mark Kamel
+                            </div>
+                            <div class="id">
+                                @markhamil
+                            </div>
+                        </div>
+                        <div class="dots">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"
+                                class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                                <g>
+                                    <circle cx="5" cy="12" r="2"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                    <circle cx="19" cy="12" r="2"></circle>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="right-panel">
+        <div>
+            <div class="feed">
+
+                <div class="accueil">
+                    <div>Accueil</div>
+                    <div class="discover"><svg viewBox="0 0 24 24" aria-hidden="true" class="">
+                            <g>
+                                <path
+                                    d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z">
+                                </path>
+                            </g>
+                        </svg></div>
+                </div>
+                <div class="do-tweet">
+                    <div class="do-left">
+                        <div class="pdp">
+                            <img src="https://pbs.twimg.com/profile_images/1441660358033215492/7TfUqDtG_400x400.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="do-right">
+                        <div class="do-write">
+                            <textarea maxlength="280" name="" placeholder="Quoi de neuf ?" cols="1" rows="1"
+                                id="write"></textarea>
+                        </div>
+                        <div class="do-bottom-part">
+                            <div class="do-icons">
+                                <a href="#" class="icons">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-o6sn0f r-4qtqp9 r-yyyyoo r-1hjwoze r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-12ym1je">
+                                        <g>
+                                            <path
+                                                d="M19.75 2H4.25C3.01 2 2 3.01 2 4.25v15.5C2 20.99 3.01 22 4.25 22h15.5c1.24 0 2.25-1.01 2.25-2.25V4.25C22 3.01 20.99 2 19.75 2zM4.25 3.5h15.5c.413 0 .75.337.75.75v9.676l-3.858-3.858c-.14-.14-.33-.22-.53-.22h-.003c-.2 0-.393.08-.532.224l-4.317 4.384-1.813-1.806c-.14-.14-.33-.22-.53-.22-.193-.03-.395.08-.535.227L3.5 17.642V4.25c0-.413.337-.75.75-.75zm-.744 16.28l5.418-5.534 6.282 6.254H4.25c-.402 0-.727-.322-.744-.72zm16.244.72h-2.42l-5.007-4.987 3.792-3.85 4.385 4.384v3.703c0 .413-.337.75-.75.75z">
+                                            </path>
+                                            <circle cx="8.868" cy="8.309" r="1.542"></circle>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="#" class="icons">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-o6sn0f r-4qtqp9 r-yyyyoo r-1hjwoze r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-12ym1je">
+                                        <g>
+                                            <path
+                                                d="M19 10.5V8.8h-4.4v6.4h1.7v-2h2v-1.7h-2v-1H19zm-7.3-1.7h1.7v6.4h-1.7V8.8zm-3.6 1.6c.4 0 .9.2 1.2.5l1.2-1C9.9 9.2 9 8.8 8.1 8.8c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2c1 0 1.8-.4 2.4-1.1v-2.5H7.7v1.2h1.2v.6c-.2.1-.5.2-.8.2-.9 0-1.6-.7-1.6-1.6 0-.8.7-1.6 1.6-1.6z">
+                                            </path>
+                                            <path
+                                                d="M20.5 2.02h-17c-1.24 0-2.25 1.007-2.25 2.247v15.507c0 1.238 1.01 2.246 2.25 2.246h17c1.24 0 2.25-1.008 2.25-2.246V4.267c0-1.24-1.01-2.247-2.25-2.247zm.75 17.754c0 .41-.336.746-.75.746h-17c-.414 0-.75-.336-.75-.746V4.267c0-.412.336-.747.75-.747h17c.414 0 .75.335.75.747v15.507z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="#" class="icons">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-o6sn0f r-4qtqp9 r-yyyyoo r-1hjwoze r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-12ym1je">
+                                        <g>
+                                            <path
+                                                d="M20.222 9.16h-1.334c.015-.09.028-.182.028-.277V6.57c0-.98-.797-1.777-1.778-1.777H3.5V3.358c0-.414-.336-.75-.75-.75s-.75.336-.75.75V20.83c0 .415.336.75.75.75s.75-.335.75-.75v-1.434h10.556c.98 0 1.778-.797 1.778-1.777v-2.313c0-.095-.014-.187-.028-.278h4.417c.98 0 1.778-.798 1.778-1.778v-2.31c0-.983-.797-1.78-1.778-1.78zM17.14 6.293c.152 0 .277.124.277.277v2.31c0 .154-.125.28-.278.28H3.5V6.29h13.64zm-2.807 9.014v2.312c0 .153-.125.277-.278.277H3.5v-2.868h10.556c.153 0 .277.126.277.28zM20.5 13.25c0 .153-.125.277-.278.277H3.5V10.66h16.722c.153 0 .278.124.278.277v2.313z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="#" class="icons">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-o6sn0f r-4qtqp9 r-yyyyoo r-1hjwoze r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-12ym1je">
+                                        <g>
+                                            <path
+                                                d="M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 17.115c-1.892 0-3.633-.95-4.656-2.544-.224-.348-.123-.81.226-1.035.348-.226.812-.124 1.036.226.747 1.162 2.016 1.855 3.395 1.855s2.648-.693 3.396-1.854c.224-.35.688-.45 1.036-.225.35.224.45.688.226 1.036-1.025 1.594-2.766 2.545-4.658 2.545z">
+                                            </path>
+                                            <circle cx="14.738" cy="9.458" r="1.478"></circle>
+                                            <circle cx="9.262" cy="9.458" r="1.478"></circle>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="#" class="icons">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-o6sn0f r-4qtqp9 r-yyyyoo r-1hjwoze r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-12ym1je">
+                                        <g>
+                                            <path d="M-37.9 18c-.1-.1-.1-.1-.1-.2.1 0 .1.1.1.2z"></path>
+                                            <path
+                                                d="M-37.9 18c-.1-.1-.1-.1-.1-.2.1 0 .1.1.1.2zM18 2.2h-1.3v-.3c0-.4-.3-.8-.8-.8-.4 0-.8.3-.8.8v.3H7.7v-.3c0-.4-.3-.8-.8-.8-.4 0-.8.3-.8.8v.3H4.8c-1.4 0-2.5 1.1-2.5 2.5v13.1c0 1.4 1.1 2.5 2.5 2.5h2.9c.4 0 .8-.3.8-.8 0-.4-.3-.8-.8-.8H4.8c-.6 0-1-.5-1-1V7.9c0-.3.4-.7 1-.7H18c.6 0 1 .4 1 .7v1.8c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-5c-.1-1.4-1.2-2.5-2.6-2.5zm1 3.7c-.3-.1-.7-.2-1-.2H4.8c-.4 0-.7.1-1 .2V4.7c0-.6.5-1 1-1h1.3v.5c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-.5h7.5v.5c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-.5H18c.6 0 1 .5 1 1v1.2z">
+                                            </path>
+                                            <path
+                                                d="M15.5 10.4c-3.4 0-6.2 2.8-6.2 6.2 0 3.4 2.8 6.2 6.2 6.2 3.4 0 6.2-2.8 6.2-6.2 0-3.4-2.8-6.2-6.2-6.2zm0 11c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7c0 2.5-2.1 4.7-4.7 4.7z">
+                                            </path>
+                                            <path
+                                                d="M18.9 18.7c-.1.2-.4.4-.6.4-.1 0-.3 0-.4-.1l-3.1-2v-3c0-.4.3-.8.8-.8.4 0 .8.3.8.8v2.2l2.4 1.5c.2.2.3.6.1 1z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a href="#" id="tweet-button">
+                                Tweeter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-left">
+                        <div class="pdp">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Billy_Dee_Williams_2016.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="post-right">
+                        <div class="post-user">
+                            <span class="username">L'andouille Cale Riz Cyan</span> <span class="userid">@andcal · </span><span
+                                class="timecode">11 min</span>
+                        </div>
+                        <div class="post-text">
+                            On m'a volé mon millénium Condor.. (Photo non contractuelle)
+                        </div>
+                        <div class="post-image">
+                            <img src="https://botw.fr/shop/14098-thickbox_default/lampe-star-wars-faucon-millenium-falcon-desk-lamp-paladone.jpg" alt="">
+                        </div>
+                        <div class="post-reactions">
+                            <div class="comments">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div>16</div>
+                            </div>
+                            <div class="retweets">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div>8</div>
+                            </div>
+                            <div class="likes">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div>330</div>
+                            </div>
+                            <div class="share">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                                        </path>
+                                        <path
+                                            d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-left">
+                        <div class="pdp">
+                            <img src="https://i.ytimg.com/vi/R2wPzOURR0c/hqdefault.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="post-right">
+                        <div class="post-user">
+                            <span class="username">John Eudipe</span> <span class="userid">@JeanEudipe · </span><span
+                                class="timecode">24 min</span>
+                        </div>
+                        <div class="post-text">
+                            Mais je suis un pirate ! Ça crève les yeux 
+                        </div>
+                        <div class="post-reactions">
+                            <div class="comments">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div>12</div>
+                            </div>
+                            <div class="retweets">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div>4</div>
+                            </div>
+                            <div class="likes">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div>1713</div>
+                            </div>
+                            <div class="share">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                                        </path>
+                                        <path
+                                            d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-left">
+                        <div class="pdp">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFRYYGRgaGhoaHBwYHBoaGhocIRoaGhwcGhocIS4lHCErIRwaJjgmKy8xNTU1HCQ7QDs0Py40NTEBDAwMEA8QHhISHzQrJCs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAQ4AuwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAQIDBAYAB//EAD0QAAEDAgMFBQYFAwMFAQAAAAEAAhEDIQQSMQVBUWFxBiIygZETQqGx0fAUUmLB4SNyggeS8SRTY6LCFf/EABoBAAMBAQEBAAAAAAAAAAAAAAECAwAEBQb/xAAnEQACAgICAgEEAgMAAAAAAAAAAQIRAyESMQRBURMicYEFkTJCYf/aAAwDAQACEQMRAD8A8p9kuFNTJpKc1DMq4NSlJKwBQE9qjzJ4KASVqUqL2iX2iBiUFOzqs56Y561GsumoFG6sFVJSLUayY1kw1ioyuRoFji5ISkXQsY5cuXBEwq5KuhYwwrkqRYx0Lki6VjE2ZNzquXFctRrJzUTQ4mwEnko2jij+x3ZS0ZCASe8BLnEDifdbeGiJN0JOkZbBP4SpMZDPx9Fabs14bLg4EmGgCS7o3Vbl5w4bLWOa8tbmcQ0kwZIkN5RCIYTFUZDmh5uTEhwvedAeJlReUpwMLhdg1MwPs3wIcA4XPCfP5Kcdl6pu7K3z+i3GO2swglri0DWBu4wg1TENf4Xmd0hK5yCooDs7ONaLyTxMx/tH1UjdgM0zhp/sj5qziPatMiC3zTaG0RHflvUWneJ4+SVyl8jKMfgid2ZJ8NZvTKJ+Kif2Wfo5oPNhyn0NijbagLQTEHwu1b0kaeaUYt7BeekyD0n6peckHjH2ZXEdlK7fCA4crH0P1VQ7ErfkPkt3h9utsHAAnc4R8dEQZWpvs7uO5fcFN9eS7RvpRfTPJqmGc0kEXGo3qMherYjAjUgPbvkAn0QfFbGwz75Sx24iY826EJ450+xJYmujArgi21dg1KMuHfZNnt/+huQoBWjJSVom00cuShIUwBpSJ0JFjCFInLljEKcBzTQntE/fqsYs7Mo5ngTBEEcyCIbewnmjzGZSCM05u64W7wNg28a3KH9mmuNdoY2XHThqM08suZbd+CYxrh7tNzoI1LwLWAsL/EqGWVOimONg2rteplDTByv1IAB92Z67k3DYkMJ8QDpMcJ3DieXNBnUS9xGYtLjfXKBOY+QifJGsO0Pc9pMT3mG1+8QR1/hRfRYsPqZXhjxqO68XaZOhHP0VTG4J1PvsEtiXM4c28W8tyftGlmpgAE5bOGpA3fT0VTYm2C2WVTmZcsfwE7/vciurQr7LuC2gH90OgnjvHLnxGqnq0GukPFxbvDWeBVfHbLY452HKQJtoZvb1Pqn0MS8DK7vDibncErr0H8kVCg6kYbOU7rf8EcirTtJFuhsPI7uW5TsqMIsRbcd3Q7vNU8TLTeY3H+VrsCTRBWkTmaOo08x9+amwryzgQdOB09CpGvDrCCRuOnQobja3sZOUlkiWSZHNjuI1HRFWwtVsP0cYW5bwToDoeh3dFeAbVtGV8GN0oRswsrMDcwLH6O0IPP8AK4IVV2hUw1Q0cRo0910aj3TytHqhx2NYfpvcw5TroWuEEjgR6rP7e7O2NXDt7oEvZvZ+pvEckew2NZiAGuILhvGsdN6no0zTdLXf4n+eS0ZOO0CUVLTPMSEhWy7WbC7v4mi0ZC7+o0C7XH3uhO7cSsjVbygbl1wkpK0c8otOmRFIlKQpxRF0LlyxiEJwO9IEZ7NYUvqtytzOkNYIkZ3GzjyaJPWEJOlZkrNf2H2W5lN9ctgvAawHXw3PLWY5q9j2EUzPDMRyJifSfRHcTRbRpMYHSGWJ4k+Jyzu08cHggbxHwj0+q4W+UrZ1RXFUgDQAyOscxf7PoJBf8AB0cUozBwcPdiw3ayB5X9UuGxQBynfczxn+ES2Ps7MMxNot0FvPRNaRqbY7EAh7Ht0c2453KHu2awucGiM143TYyOE6QjuMwpaGjdBA9bdEGp4gB+R1oNjwKCarRuLsfRYWCzpAExvHT42TiQTOk+n8LqjCfFaBZw013qBuIc3US3iNR6oPfQ6idVa4OuCODmp4e6MrjmGsaeh4ptR7SNbffoqgrkDKZI3HePqikahlWG99pOsi8dWldtHFgskjM3S9iDqL8IUOKpugkamLDQ8wqFOsCC10wbHlw9D8062I9FjYVfKXMbMl2donUgeE+QMdQtptWmzE0A8gFzAGvHFpEZgeIK87aXMe0gw4OBkeoI8lp9n7QLH5z4HuyuG7K7NaPMnyC011JAj8MrYfZ7WXEkDQgkEcjzR6nig5jWPGYDwuOo6lUcQyHBzbAyDe4I3Hj15prazTa4A/LqD03hBptBVI0OCqNbmpvaSx4IcDdpBEa7l53tzZrsPVcwyWg9xx95p0P15rc4HGAsDC7MPzDUHdI9E7tZg/bYYvyy+iMx4lm8jjx8lscuMqFnG1Z5iVy4rl2HOIuhcuWMRLf9hsOGMNYi98vUiJHQT6rBMbJA4leh13ezoU2C27yj6knzXP5EqSj8lcMbdl2rtMvZJNp+EWHos/iJuPMFdRr5WQf+BFv2UL6kW1HNc0U0dI2hQzPF5zEQOE2XofZ6iDSyR3mSxwO/eD5thY3sxhjUraWbLvp816AzBlha9gkkAOG8jd5i60nugxQlTAguAiRFwdIi8rJ9o9hvAL2NJjUb439eMreULuJPBdXpW6n5cUsb7C66PN9l54AcM7DAne3hPEc0Tr7HBMt7vTT0RR2AYx5fOUEkxuvwRBlAVAAyeqG70M2jKv2ACAQ6/IQfoUE2nsypROfxM48ORC9KZsKL38tFHjNihzS02kQZ0PVOuS7Fbi+jztmFJZmb3mndvHT6INtXCZTnaDG+f3W5GwX0HQGOczkM0eY1CsYnYDKrYkA7k0ZNMEopo8s9ofl5dOCK4GsCHMdYOYCORGkejfRP2z2aqUnEgZm8kMabN4i3RVtSWiPFphgbRJIESSLjiQXNPWYUjqecNc0lrtW3seXwQN4PiBuP8AlGNiYxrxld4teqNatAfey3hazg7K6JO8WJ68+a1ez8Q7I4Ou4CCP+4y+a25wv1ss9WoGWvAkTc7gefALR7BJIkC41HEDWecKctbHSvR5htPDhlR7RoDbmNR8FUWi7Z4M08QZ0OnTd9PJZ1dUJcopnNJU2jkkJSuhOKSYBoztJ0B9eS2W2KxLAOnyWHa7hZavar5YCN8fIfRcueNyR0YXplJ79D9zoqzaxzEHj9wovxY97huXUzO+R6FBRGcj0fsPhe458RJA9Lla2tiWi2YTwQjsZhh+GZJgGST5x8grm0hhGGH1AHcJl3oLqXHtjqQQpPDiIi6tV6ENKD7Iewvaab8zeEQVoqhCyQX2Y7G0S58O/gIZje17qALMPTBgwXuBMkTNhustTi8Hnc3zBjgq47P02zlAMxMzaJiI6rRTTNJqjL4ft7ibF9JjmwHGA5pgxpO8TGm5ajZHaaliRAOV29rvEFMzY7CZd6BkfGJKs/8A4tA602nmRB9dVWxEvktsO7UJ7qbTqoaeDDLN05/VSTCWxqB2O2Ox4Mb9xXl/azs2+k7O0Wlevvehe1qLajC10IRpPRpJ0eIUzNnWcPQqq2abpvYgrTba2WWOsDvWfeHCxAPXUeasmTZpdnbRDmmfC4ZXD8p3OHmiOx9pljwAfey9Y+f8c1hqby0y09R9RwRPDYqYdwieoEffRJKIUzW/6gYZr6THtvluD+ne3yJB6Lzkhb6jjRWwr2E95gL2nloQsE7Up8DdNMnlW7GrlxXQugkMWlfVzMA3iDHIiZWaCK4Or4CYt3XftPlHopZY2h8cqZSxtOCkY+B96ojtTC2lCKj0sXaHkqZ6Xh9rvp7MpuYSCQQCN3fLUO2FsKpWfnLiA4ES5oeXBwgnvTB5681quy+xGVsFhQ8SwNzuH5iTmaDykyVr6OGAADRAGgFgFK+0U7SKmxtkMpnM2dNNw6Io/VKCGiCYUFSs3SQlfYyJmNBUxYOCG1nFozMdcXInVWMLjQ8T8EE90ZxdWWSwJjk9zgoiUwEMLlBXdZSuUNRqDGRVDyq+JZIurYao6rJCnRQxe3cOSek+axmMwpnTXVeu1tmh4usPtjBGnicliwtk/pJJ+nxVLfZNJPRi3UspUbwWkxodVpMfgMu6QfsIW7DjNDuIt6yPkqRlZOSog2VifZ1mHVp15tOoPRUcSzK9zeBI+K0uO2O0UWVKbfe7w4aXHo70Cz2OEPfN+8TI3g3B9FSH+TJz6Ky6VxXSrEhoU2GrFp4g6hQqXDtk9AT9PiQg0ZMNuqB7CBqLEcuPNZ19PvEeau0qha4Bt4F+dpPl9FJiaMPDh4XDXhKio8WVcuS/B7p2Hb/0eGH/AIaZ9WgrROACy3YiuDg6MatbkPVhLD8kdrVrKF9luN0CO0WLcwZmyYFwFmqzKmIDWhz6c3cTYxwJH7FbWhSDpLhM/JPexjbw0D73JavZVTrSRmtkdnXU2lorVHg3Je4uj+2UdbhsgGXcAJ49VMMYzeY62SuqNI7pB80aFbl7GiqlFVVXVQntagpBos5lzlGHQuLkbFojKY4JxKSUBiRtggD+y5l73VC4ucTcbiZgmUVx2LNNoc0SQ5tv8gosR2iYQc72jlN9eYFrEJ6jW2KlK9IyHaCnkYQGmGd57yIHdvA4rGMqF7mOOpk/uPgjPbntM2sPYUnSCe84aRwHElDcDRjLPuti/GLp4rirFlt0aXBQKYYdDczwt+xKxO3KGSu9the0aRuhaStitIOoNuXhb6ku9EF7R4cgseR4mAO4hzYDvmPsow1InNaAn30SQuXSugiNAT2OgHmI+IP7BNCWERRzHkab9eaL7LAeMrgYaJHkEHbqEX2ewwXmQJjra5jhuCnPoePZ6P8A6cVj7Goz8lSR/k36tWse+yxH+nVTv1m8WMIHRzr8/EtuGLjl2dceiPGYwU2Fx3CB1WZZt8y5wBMakmAOaKbewj6zBTY4NkyXGSGiYmBqb6J+A2PQotaMmdwHiqEOJ5iwAvwCMUVjJRj/ANZnH4rE1+9TY94JI8ORoF7hz4BHSdV1PYm0HGc1OmZ8WZxIHMBsFbQYpswL9BZWabZuU32geVoA7N2PXYZqVs539zKPK8o0wQPJWahtZUnOgcUkkk7RNScux7yoy5Rueo3OKWyiiPc9IXqAvTM8lZMNDdsNzUKo403gdcpj4rxfHUnveXPMuJkl0CeK9oxz4Yea8k23WbVIc0gECHA23q8CcuqK2z8OxpBHedy8I8z+yumrJyzDRrz5dFSpPDG+IE8Z+QTqBzOGtzv+Pkmq2Tf2ou5c7XnTJAnpv5XPzKtbddnw1N/MB39wEAzutMofTxAaXg+B2cepsY5QiOCpB+ErNduhwvvABHyWr7rFk9GTISJZXLoIjUoSJQiIOBU/4kkgkmB9lVwlaUGgm+7K1/ZYmk5xgPBY7q7w/EN+K9Pa9eKbJxHtBkk5wJn5QvTdjbX9pTa4+Md14/UN/Q6rimmmdcHZoWRcRqf2UbsE0mYUeFrhyvNelWwu0yOlhWjcpi2Ex9SFUxGMARbSMouRYe5VcS8AKpUxwvdCcTjHOmEkpFY42FDVCa94QdmIKnFclImW4E76qsYalvOqgw1O8lEqaeKEk60iCths9l5N2q2O+hWcYIa4k9JvZeysshfafZTa9IttmA7p58FVa2iN26Z4kyoxv3dP/FGJ0m08t6XFbKqsrOpZTm+EcZ4JtXBFphx7w3KyaJuMmrrXySOqTYbpB9ZRrDVsmHqHQEBs84MW8ihWEw2pd8eKubXqZabaWlhUd5mGz6yjViPoCVNTzv63/dRpSkhUJ0IlCSUqYmclSBKFghDZeIyOBsMpLt8uMQ1vrf1Wso7RdTeHsgtIBI4tImJ4rDBGdl48hpa8gtiwceAgQo5IXspjlTo9S2dtNj2CpTMjfxB3gq4zag4ryDC7QqYaoXMLSHRmZPdI1jkb6rcbL2iyu2Wm+9p1H1C5ZQcd+jsg4y0+zR1dqToh1fFEmU12H4FMFJSdsvFRXQ2S5T5BCVrYSFAe7IckFSsCSFPRYikBypFugFdYVWY1TtPFVic7dlho3qHF1gxpe/Qac1MwWzGwH3dZna+NNV/6G6DieKMnSK+PgeadLr2wbi3mo8vcANwHAcEKxmxHPcHMInfOo+qMJA6NFJSadnuPDBw4VozVfBOoFpqMzAmzh4Z4eiGdpn/13x+Rg6yGuHz+C9ADg8FlRocw6ysP2mwD/buyNe9sDvNY6I6xFoXVjnyPB8vxXilcemZxcucIMFcuhHBRy6Vy5MRFXBInBYI5KmhOCASXDszGJhF2VsmVrMwfNiNd+4IOx8IxsrENJJLu8BAn9vsKWRPsrBo2fZ/antWd6M7YzAc9HAIuAsJsrHFmID5AZOV+t2m2Y9DBXoPs7LklGmdkJ2tkLkjWp2ROypKHchGMk2VplMaKNjgnsfdMibbZZYOGqtUcL7zvIKXBYeBJF/u6j2ni8jCd+g5ncnWlbFVykoxBW3sdAyNP930WeUtQkkkmSdSmtKlJ2z6Dx8KxQpfsbk4pW+ieVT2pUyU3Eamw81i/ZSxuKdUJpsJjSRqT13BaLAU3MY0FxMACZQLYNDK3Od9h0RxuKgQAimRyxvSQ+vhWVPHTY8fqa0/EhDKnZXCkkmkPJ7gPITZXH1nHkm5inWRrog/GT7SPI0qcGpQF32fLUNATguhKEQnBOCQJVgoVK10aLlyDCP8AaGIngvXuzOKFfDMeJkDIZ1zNtJ6iD5rx+F63/p9hQyk+i4nO0te8bml7YDBzAYJ5kqGaKpFcSltrpBXEYffuUbKfmiuKwttfJRUcJvC5+Oy3LRSbhyd38ojgsBHecOgVnDYUC5VouTKKFcmRPKye1cWXvt4W2HPn9EZ2/i8jQweJ2vJv8/VZyUkpej1PAwUvqS/RXeEyFYddAtq7adRdl9m4ni6zT/ad6Sj1OSS2FnBDNpjO5jBxJPQD+VUw+2alSzaR6l3d+SJYTDuBL3xmNoGgHAcUGPFqrLNGnlAHCymBUT3XhOYsK17JEkLnJJRMeUhKuXL1KPizkq5csEUJQuCULGOCWFwWl7Ndl3Yge1qnJQbcn3nxq1nyzenJW0lbHhCU3xiJsTACkz8TUF5/otI1I988QN3Pot52AwTmCs97g5zyzwkOGUBxBkbyXO8oQCowYmuARlo0mguABhrBoyREEgGJ/KV6HsbAtpss0NNQ53AWAJAAaANIaAPJcnLk7/o9DMlhgsUe+3+QiBKX2SSmE9xRRxkb+SY5wa0uNgBJKlDUB29tEEezbpvPHhHKfkg3SsrhxvJNRQFxlZznOcd59BuCrqQppCgfRxSikkNKZUgiHAEcCJHoUrnJhKw6RWqBrGkgAAcFLTMiVVLc7v0NP+5w/YfNW9AlW2O+qK7n95SsN1Te7vHqrbCs+xmtEpco/bKPEVIUOcJroCiecwlhclXqnw4kJUqdTYXEAAkmwA1J4IDIaAr2z9l1aximxzuJFmjq42C1+wexjWgPxN3ainNh/eRr0C2uGY1sNa0NA0aAAGjkBvUZZktI7cXhykuUtGW2F2DY0h+Jdm3hjbN/yOp+CN9oMQGtZSaWsaS1u4NaNBwAARKpXjqsV2kqZ6rKVyXODe6JIvcxvgSTyBXPKblSO/FhjjTl1SsIdnqrGMeA1z3Ofmdka8Pc0eGAJJa254ST1XpGHIIB5SsPsMf1arGNAY0sptgW7lnN6Zs0eS2lK0DSLRwjWUyR5uRuUm5dvZPmTHHUkgACTNh96eqifiRJawZnDU6gHdPwTRQvmeczvOB0BReuyaRG+oXzq1nE2c6DPGwWUxlTM4uAgbhwA0Wj23iMlPKNXW8t6yxKlN+j1/4/HScvka5NcU5xURKmemhC2QquIJ8IsT8BvKtVKkCToo6FP3jqfgNwQY8XWyNjABA3WCe82UrhCrVzaUYmTtlBzu95q7TNkNa6SPNX6bu7KX2Wa0UazyXngpJVVhl8K57Ib3BZhWjALoToXQvWPhELTYXENaCSTAAuSToAvSuzmwGYVoe+DWI6in+lv6uJ8gqfZLYgosGIqD+o4SwH3Gn3v7iPQdUWxOJJXLmy/wCsT2PB8O6lP9EuLxvDd8U7A7Sc5pLmwBoR7xUDMJvf/t+vDortGhmInTh+y5lZ6klBRoR1QtYXu1NxyCy3Z7+piKuKcJZQackiQXmzIvrPI6or2wxeRhY3V3dtukfSVY2Jsv2dCjSAGZ5FZ+h5MbI1GrvJXgkk5M4PKnpRXvb/AAH+zWEyUxOuh4zMu/8AaUbpMeHuZkDmOBBnhDdDuM5rcADKXZ+GgADdb6lGBAEDRNBPs8nLJNlHD4VrBF9Sbm/OVzwCVb9mTyVPatVtGmXak2HI8Y5JnHQIXKSiu2ZTbeJzPMaCw++qFkqSs+SVGuWTtn02KChBRQ1yjIUhKH7QxBkU2eJ2p/K3eUpaKsUPzvgeFpvzP8K4osNRDGgBPcUGFu3SG1HKrVuCpahVZ5RQ8UD26q8PCh9R9wiDT3EvspLoEYJ5uR4iSFc/DDe6+9VNlt7zz+oxyvqrzqjeKDCmYYBG+zGzRWrDOJYzvv4GDZvmfgCg69E7MYUU8OyNXy9x46gDyA+JXp5ZVGz4/wAPF9TIk+lsJY+tp0VbAjM+eAJ/YfNRYl5J6q/sxkNcd5MffqvPW2fTNKMC21kdVYcQxpcdV1CnN1Q27UcctMGMxDZ4TvVUjilJN76RQ2bgDiqj3OPcaRFwJIN4nXWPRbXB7KqF5c5pG+8DdA9B8ypdi7HZSFMN8IbMbyW6zxkwfJaCo6AB+YroUFxpni5vJcptojw+Fy3J3blYYwJ64lOkkjlcmxhWN7SY7O7K091tup3n74LQ7ZxORhiZjUeiwdd0lSzS1R6f8dh5Sc366IimFKUhXKz3UQYqsGNk3OgHE7gq2Cw5Euddzrn6DkE5gzuzHQEho4cSrYQHelRyY8pSVFVKxkiKoVWeVM8qB+iPorEFvHeCKUj3EPqa+avUjZJ7HfQMwwIc5o1LrchARH8E3eVVpCKjzxhX/Yc1gLR//9k="
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="post-right">
+                        <div class="post-user">
+                            <span class="username">Martine Score 16</span> <span class="userid">@au_basket · </span><span
+                                class="timecode">4 heures</span>
+                        </div>
+                        <div class="post-text">
+                            On est jamais à l'abri d'une mauvaise chute
+                        </div>
+                        <div class="post-image">
+                            <img src="https://admin.lalanguefrancaise.com/wp-content/uploads/dictionnaire/tomber.png" alt="">
+                        </div>
+                        <div class="post-reactions">
+                            <div class="comments">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="retweets">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div>2</div>
+                            </div>
+                            <div class="likes">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div>3</div>
+                            </div>
+                            <div class="share">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                                        </path>
+                                        <path
+                                            d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-left">
+                        <div class="pdp">
+                            <img src="https://i.ytimg.com/vi/R2wPzOURR0c/hqdefault.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="post-right">
+                        <div class="post-user">
+                            <span class="username">John Eudipe</span> <span class="userid">@JeanEudipe · </span><span
+                                class="timecode">13 heures</span>
+                        </div>
+                        <div class="post-text">
+                            Je suis trop une perle 🧿
+                        </div>
+                        <div class="post-image">
+                            <img src="https://www.bateau-electrique.com/images/news/news_2021072080123.jpg" alt="">
+                        </div>
+                        <div class="post-reactions">
+                            <div class="comments">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="retweets">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div>1</div>
+                            </div>
+                            <div class="likes">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div>33</div>
+                            </div>
+                            <div class="share">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                                        </path>
+                                        <path
+                                            d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-left">
+                        <div class="pdp">
+                            <img src="https://images.lpcdn.ca/924x615/201107/23/352299-norvege.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="post-right">
+                        <div class="post-user">
+                            <span class="username">J'ai toujours Tort</span> <span class="userid">@dieudutoner · </span><span
+                                class="timecode">2 jours</span>
+                        </div>
+                        <div class="post-text">
+                            J'ai pas compris
+                        </div>
+                        <div class="post-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQytp698d36TENLQhp3tPLLZQGTHzf4-I-XnQ&usqp=CAU" alt="">
+                        </div>
+                        <div class="post-reactions">
+                            <div class="comments">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div>13420</div>
+                            </div>
+                            <div class="retweets">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div>12</div>
+                            </div>
+                            <div class="likes">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div>1</div>
+                            </div>
+                            <div class="share">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                                        </path>
+                                        <path
+                                            d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-left">
+                        <div class="pdp">
+                            <img src="https://media.kasperskydaily.com/wp-content/uploads/sites/93/2020/02/17105605/twitter-privacy-security-featured.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="post-right">
+                        <div class="post-user">
+                            <span class="username">Tout Hiteur</span> <span class="userid">@jaipadinspi · </span><span
+                                class="timecode">13 jours</span>
+                        </div>
+                        <div class="post-text">
+                            Bienvenue sur Tweeter !
+                        </div>
+                        <div class="post-reactions">
+                            <div class="comments">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="retweets">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div></div>
+                            </div>
+                            <div class="likes">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div>330</div>
+                            </div>
+                            <div class="share">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                                        </path>
+                                        <path
+                                            d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aside">
+
+                <div>
+
+
+
+
+                    <div class="search-bar">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"
+                            class="r-9ilb82 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-mxifo9 r-1j3zfw3 r-bnwqim r-1plcrui r-lrvibr">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                        <input type="text" placeholder="Recherche Twitter">
+                    </div>
+                    <div class="trends">
+                        <div class="top">
+                            <div class="top-text">
+                                Tendances pour vous
+                            </div>
+                            <div class="settings">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-54znze r-4qtqp9 r-yyyyoo r-1hjwoze r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-12ym1je">
+                                    <g>
+                                        <path
+                                            d="M12 8.21c-2.09 0-3.79 1.7-3.79 3.79s1.7 3.79 3.79 3.79 3.79-1.7 3.79-3.79-1.7-3.79-3.79-3.79zm0 6.08c-1.262 0-2.29-1.026-2.29-2.29S10.74 9.71 12 9.71s2.29 1.026 2.29 2.29-1.028 2.29-2.29 2.29z">
+                                        </path>
+                                        <path
+                                            d="M12.36 22.375h-.722c-1.183 0-2.154-.888-2.262-2.064l-.014-.147c-.025-.287-.207-.533-.472-.644-.286-.12-.582-.065-.798.115l-.116.097c-.868.725-2.253.663-3.06-.14l-.51-.51c-.836-.84-.896-2.154-.14-3.06l.098-.118c.186-.222.23-.523.122-.787-.11-.272-.358-.454-.646-.48l-.15-.014c-1.18-.107-2.067-1.08-2.067-2.262v-.722c0-1.183.888-2.154 2.064-2.262l.156-.014c.285-.025.53-.207.642-.473.11-.27.065-.573-.12-.795l-.094-.116c-.757-.908-.698-2.223.137-3.06l.512-.512c.804-.804 2.188-.865 3.06-.14l.116.098c.218.184.528.23.79.122.27-.112.452-.358.477-.643l.014-.153c.107-1.18 1.08-2.066 2.262-2.066h.722c1.183 0 2.154.888 2.262 2.064l.014.156c.025.285.206.53.472.64.277.117.58.062.794-.117l.12-.102c.867-.723 2.254-.662 3.06.14l.51.512c.836.838.896 2.153.14 3.06l-.1.118c-.188.22-.234.522-.123.788.112.27.36.45.646.478l.152.014c1.18.107 2.067 1.08 2.067 2.262v.723c0 1.183-.888 2.154-2.064 2.262l-.155.014c-.284.024-.53.205-.64.47-.113.272-.067.574.117.795l.1.12c.756.905.696 2.22-.14 3.06l-.51.51c-.807.804-2.19.864-3.06.14l-.115-.096c-.217-.183-.53-.23-.79-.122-.273.114-.455.36-.48.646l-.014.15c-.107 1.173-1.08 2.06-2.262 2.06zm-3.773-4.42c.3 0 .593.06.87.175.79.328 1.324 1.054 1.4 1.896l.014.147c.037.4.367.7.77.7h.722c.4 0 .73-.3.768-.7l.014-.148c.076-.842.61-1.567 1.392-1.892.793-.33 1.696-.182 2.333.35l.113.094c.178.148.366.18.493.18.206 0 .4-.08.546-.227l.51-.51c.284-.284.305-.73.048-1.038l-.1-.12c-.542-.65-.677-1.54-.352-2.323.326-.79 1.052-1.32 1.894-1.397l.155-.014c.397-.037.7-.367.7-.77v-.722c0-.4-.303-.73-.702-.768l-.152-.014c-.846-.078-1.57-.61-1.895-1.393-.326-.788-.19-1.678.353-2.327l.1-.118c.257-.31.236-.756-.048-1.04l-.51-.51c-.146-.147-.34-.227-.546-.227-.127 0-.315.032-.492.18l-.12.1c-.634.528-1.55.67-2.322.354-.788-.327-1.32-1.052-1.397-1.896l-.014-.155c-.035-.397-.365-.7-.767-.7h-.723c-.4 0-.73.303-.768.702l-.014.152c-.076.843-.608 1.568-1.39 1.893-.787.326-1.693.183-2.33-.35l-.118-.096c-.18-.15-.368-.18-.495-.18-.206 0-.4.08-.546.226l-.512.51c-.282.284-.303.73-.046 1.038l.1.118c.54.653.677 1.544.352 2.325-.327.788-1.052 1.32-1.895 1.397l-.156.014c-.397.037-.7.367-.7.77v.722c0 .4.303.73.702.768l.15.014c.848.078 1.573.612 1.897 1.396.325.786.19 1.675-.353 2.325l-.096.115c-.26.31-.238.756.046 1.04l.51.51c.146.147.34.227.546.227.127 0 .315-.03.492-.18l.116-.096c.406-.336.923-.524 1.453-.524z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="topics">
+
+
+                            <a href="#" class="topic-parent">
+                                <div class="topic">
+
+                                    <div class="category">
+                                        Tendance dans la catégorie Pas loin
+                                    </div>
+                                    <div class="title">
+                                        Michèle Trucker
+                                    </div>
+                                    <div class="number">
+                                        13 Tweets
+                                    </div>
+
+                                </div>
+                                <div class="dots">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                                        <g>
+                                            <circle cx="5" cy="12" r="2"></circle>
+                                            <circle cx="12" cy="12" r="2"></circle>
+                                            <circle cx="19" cy="12" r="2"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="topic-parent">
+                                <div class="topic">
+
+                                    <div class="category">
+                                        Divertissement - Tendance
+                                    </div>
+                                    <div class="title">
+                                        #CestPasUneBoiteDeChocolat
+                                    </div>
+                                    <div class="number">
+                                        10,3k Tweets
+                                    </div>
+
+                                </div>
+                                <div class="dots">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                                        <g>
+                                            <circle cx="5" cy="12" r="2"></circle>
+                                            <circle cx="12" cy="12" r="2"></circle>
+                                            <circle cx="19" cy="12" r="2"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="topic-parent">
+                                <div class="topic">
+
+                                    <div class="category">
+                                        Tendance dans la catégorie Gâteau
+                                    </div>
+                                    <div class="title">
+                                        Si c'est une boîte Forest
+                                    </div>
+                                    <div class="number">
+                                        1,7k Tweets
+                                    </div>
+
+                                </div>
+                                <div class="dots">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                                        <g>
+                                            <circle cx="5" cy="12" r="2"></circle>
+                                            <circle cx="12" cy="12" r="2"></circle>
+                                            <circle cx="19" cy="12" r="2"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="topic-parent">
+                                <div class="topic">
+
+                                    <div class="category">
+                                        Tendance dans la catégorie Galaxy
+                                    </div>
+                                    <div class="title">
+                                        #RougeChiliPoivre
+                                    </div>
+                                    <div class="number">
+                                        29,3M Tweets
+                                    </div>
+
+                                </div>
+                                <div class="dots">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                                        <g>
+                                            <circle cx="5" cy="12" r="2"></circle>
+                                            <circle cx="12" cy="12" r="2"></circle>
+                                            <circle cx="19" cy="12" r="2"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </a>
+
+
+                        </div>
+                        <a href="#" class="seemore">
+                            <div>
+                                Voir plus
+                            </div>
+                        </a>
+                    </div>
+                    <div class="suggests">
+                        <div class="top">
+                            <div class="top-text">
+                                Suggestions
+                            </div>
+                        </div>
+                        <div class="middle">
+
+                            <a href="#" class="account">
+                                <div>
+                                    <div class="pdp">
+                                        <img src="data:image/jpeg;base64,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"
+                                            alt="">
+                                    </div>
+                                    <div class="username">
+                                        <div class="nick">
+                                            Sorelleila
+                                        </div>
+                                        <div class="id">
+                                            @Leilo
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="follow">
+                                    <div>
+                                        Suivre
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="account">
+                                <div>
+                                    <div class="pdp">
+                                        <img src="https://tracktorfr.s3.amazonaws.com/production/articles/picture_ones/000/003/402/large/LOCATION_BENNE_GRAVATS.jpg?1558461318"
+                                            alt="">
+                                    </div>
+                                    <div class="username">
+                                        <div class="nick">
+                                            Benne Solo
+                                        </div>
+                                        <div class="id">
+                                            @Alordure
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="follow">
+                                    <div>
+                                        Suivre
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <a href="#" class="seemore">
+                            <div>
+                                Voir plus
+                            </div>
+                        </a>
+                    </div>
+                    <div class="legals">
+                        <div>
+                            <a href="#">Conditions d’utilisation</a><a href="#">Politique de Confidentialité</a>
+                        </div>
+                        <div>
+                            <a href="#">Politique relative aux cookies</a>
+                        </div>
+                        <div>
+                            <a href="#">Informations sur les publicités</a><a href="#">Plus
+                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-ip8ujx r-dnmrzs r-1p4rafz r-bnwqim r-1plcrui r-lrvibr">
+                                    <g>
+                                        <circle cx="5" cy="12" r="2"></circle>
+                                        <circle cx="12" cy="12" r="2"></circle>
+                                        <circle cx="19" cy="12" r="2"></circle>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <a>© 2021 Twitter, Inc.</a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/autoresize.jquery.js"></script>
+
+<script>
+    const tx = document.getElementsByTagName("textarea");
+    const tweet = document.getElementById("tweet-button");
+    for (let i = 0; i < tx.length; i++) {
+        tx[i].setAttribute("style", "min-height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+        tx[i].addEventListener("input", OnInput, false);
+    }
+
+    function OnInput() {
+        this.style.minHeight = "auto";
+        this.style.minHeight = (this.scrollHeight) + "px";
+        if (this.value.length > 0) {
+            $("#tweet-button").addClass("active")
+        } else {
+            $("#tweet-button").removeClass("active")
+        }
+    }
+</script>
+
+</html>
