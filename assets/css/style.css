@@ -301,16 +301,23 @@ main>section {
 }
 
 .accueil {
-    width: auto;
+    width: inherit;
     height: 48px;
+    position: fixed;    
     border-bottom: #2E3336 solid 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 14px 0px 14px;
     font-weight: 700;
     font-size: 18px;
     color: #D9D9D9;
+    background-color: black;
+    z-index: 1;
+}
+
+.accueil div {
+    margin-left: 14px;
+    margin-right: 14px;
 }
 
 .accueil .discover {
@@ -333,8 +340,7 @@ main>section {
     width: auto;
     background-color: #000;
     border-bottom: #2E3336 solid 1px;
-    color: 18px;
-
+    margin-top: 48px;
     display: flex;
     padding: 15px 15px 15px 0px;
 }
