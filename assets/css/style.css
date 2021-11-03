@@ -456,6 +456,12 @@ main>section {
 
     display: flex;
     padding: 15px 15px 0px 0;
+    transition: background 0.5s;
+}
+
+.post:hover {
+    cursor: pointer;
+    background-color: #0B0B0B;
 }
 
 .post .post-left {
