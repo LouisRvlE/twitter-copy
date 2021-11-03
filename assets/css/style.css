@@ -234,7 +234,7 @@ header .account-parent {
         width: 88px;
     }
 
-    header>div {
+    header>section {
         width: 88px;
     }
 
@@ -301,10 +301,10 @@ main>section {
 }
 
 .accueil {
-    width: inherit;
+    width: 600px;
     height: 48px;
-    position: fixed;    
     border-bottom: #2E3336 solid 1px;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -340,7 +340,10 @@ main>section {
     width: auto;
     background-color: #000;
     border-bottom: #2E3336 solid 1px;
+    color: 18px;
+
     margin-top: 48px;
+
     display: flex;
     padding: 15px 15px 15px 0px;
 }
@@ -834,5 +837,8 @@ main>section {
     .feed {
         width: auto;
         max-width: calc(100vw - 100px);
+    }
+    .accueil {
+        width: 100%;
     }
 }
