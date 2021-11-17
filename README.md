@@ -15,7 +15,7 @@
 
 As part of a school project, we had to recreate the Twitter home page.
 
-This project consisted in recreating the page using HTML5 and CSS3. I allowed myself to add elements in JavaScript.
+The purpose of the project is to recreate the page using HTML5 and CSS3. I allowed myself to add elements in JavaScript.
 
 Enjoy seeking the code !
 
@@ -28,7 +28,7 @@ Our HTML file is a fundamental here because it's like the body of our project. I
 
 #### CSS3
 
-In the assets folder you can see our stylesheet `styles.css`. It is really useful because it allows us to style every single element that we declared earlier. If the html file is our skeleton, this stylesheet is its skin.
+In the assets folder you can see our stylesheet `styles.css`. It's really useful since it allows us to style every single element that we declared earlier. If the html file is our skeleton, this stylesheet is its skin.
 
 #### Font Awesome
 
