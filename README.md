@@ -88,14 +88,17 @@ Now, only the main and left the part must be scrolled. According to this, I deci
 Then I decide for the main and the left part to use the `overflow-y: scroll`, so I can scroll each part independently.
 
 ### Responsive
+Tawan
 
 Louis
 I decided to cut the responsive in 4 parts :
-1. The first phase is when it's a Desktop, so everything is visible.
-2. The second phase hide the text from the navigation part.
-3. The third phase make the aside part responsive
+1. Wider than 1282px : Everything is visible.
+2. Thinner than 1282px : Hide the text from the navigation part.
+3. Thinner than 1094px : Make the aside part responsive
     The width isn't fix anymore.
-4. The fourth phase hide the aside part, and make the feed side fit the screen.
+4. Thinner than 1025px : Hide the aside part, and make the feed side fit the screen.
+
+Robin
 
 ### JavaScript
 
@@ -172,6 +175,6 @@ The first one is a div that appear only when the user click on the button `<more
 
 ### What did we learn ?
 
-Thanks to this project I was able to consolidate my knowledge in HTML, and develop my skills in CSS and more particularly responsive.
+This project gave me the opportunity to consolidate my knowledge in HTML, and develop my skills in CSS and more particularly responsive.
 
 I was also able to try Javascript, which really gave my project a real boost.
