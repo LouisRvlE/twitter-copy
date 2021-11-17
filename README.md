@@ -1,5 +1,3 @@
-"# twitter-copy" 
-
 # Twitter Copy
 
 ![Example](./assets/img/exemple.png)
