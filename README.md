@@ -2,6 +2,8 @@
 
 # Twitter Copy
 
+![Example](./assets/img/exemple.png)
+
 ## Summary
 
 - **Genesis :** School Project
@@ -41,7 +43,6 @@ Javascript is really helpful at making our elements more dynamic, it's an awesom
 
 ### Global Structure : Designing our website
 
-Louis
 I decided to use a flexbox with the property display:flex for my body in order to easily divide my website into two horizontal parts:
 - **header** (the navigation, to the left)
 - **main**, divided in two other parts :
@@ -61,49 +62,8 @@ I decided to use a flexbox with the property display:flex for my body in order t
 ```
 Now, only the main part must be scrolled. According to this, I decided for the header and aside part to create a child section taking 100% of the height and width of the column, and to make it fixed by using `position:fixed` property so it can't be scrolled anymore. 
 
-Tawan
-Grid
-I decided to use the property display:grid for my body in order to easily divide my website into three horizontal parts:
-- nav (the navigation, to the left)
-- main (in the middle with the tweets)
-- aside (to the right with the suggests)
-
-```html
-<body>
-    <nav>...</nav>
-    <main>...</main>
-    <aside>...<aside>
-</body>
-```
-
-Now, only the main part must be scrolled. According to this, I decided for the nav and aside part to create a child section taking 100% of the height and width of the column, and to make it fixed by using `position:fixed` property so it can't be scrolled anymore. 
-
-Robin
-Flex
-I decided to use the property display:flex for my body in order to easily divide my website into three horizontal parts:
-    - container (the navigation, to the left)
-    - feed (in the middle with the tweets)
-    - right (to the right with the suggests)
-Now, only the main and left the part must be scrolled. According to this, I decided for the right part to create a child section taking 100% of the height and width of the column, and to make it fixed by using `position:fixed` property so it can't be scrolled anymore. 
-Then I decide for the main and the left part to use the `overflow-y: scroll`, so I can scroll each part independently.
-
 ### Responsive
-Tawan
-I decided to cut the responsive in 5 parts for the width and 2 parts for the height :
 
-#### Width:
-1. Wider than 1440px : Everything is visible.
-2. Thinner than 1440px : Hide the text from the navigation part.
-3. Thinner than 1135px : Hide the aside part
-4. the aside part slowly dissapear (still using @media rule)
-5. Thinner than 802px : Hide the aside part completly, and make the main side fit the screen (also reorganizing some properties such as images width, word break, tweet size and buttons position for example).
-
-#### Height:
-1. higher than 853px : Everything is visible.
-2. smaller than 853px : slowly hide some of the buttons in the "trends for you" section each time an element is about to be hidden because of the window height. Also retract the navbar each time an element is about to be hiden because of the window height.
-
-
-Louis
 I decided to cut the responsive in 4 parts :
 1. Wider than **1282px** : Everything is visible.
 2. Thinner than **1282px** : Hide the text from the navigation part.
@@ -111,15 +71,8 @@ I decided to cut the responsive in 4 parts :
     The width isn't fix anymore.
 4. Thinner than **1025px** : Hide the aside part, and make the feed side fit the screen.
 
-Robin
-I decided to cut the responsive in 4 parts :
-1. Wider than **1280px** : Everything is visible and the aside part is responsive.
-2. Thinner than **1280px** : Hide the text from the navigation part.
-3. Thinner than **1100px** : Hide the aside part, and make the feed side fit the screen.
-
 ### JavaScript
 
-Louis
 As said before, I allowed myself to add 2 elements in JavaScript. 
 The first one is an auto-sized `<textarea>`, and the second is a "Tweeter" button than is only active if the `<textarea>` tag isn't empty.
 
@@ -162,36 +115,16 @@ The first one is an auto-sized `<textarea>`, and the second is a "Tweeter" butto
 </script>
 ```
 
-Robin
-As said before, I allowed myself to add 2 elements in JavaScript.
-The first one is a div that appear only when the user click on the button `<more>`, and then dispear when the user click somewhere on the screen. The second one is the same exepct that the user click on the profile button.
-
-
-```html
-<script>
-    // I get the DIV element by his tag name.
-    const subItemsBox = document.querySelector('.sub-items-box');
-    // Then I get the more button by his tag name.
-    const moreBtn = document.querySelector('#moreBtn');
-    // And I get the overlay.
-    const overlay = document.querySelector('.overlay');
-        
-    // I add an event listener. When the user click on the profil button, the sub menu is active, so it appear.
-    moreBtn.addEventListener('click', function() {
-        subItemsBox.classList.add('active');
-        overlay.classList.add('active');
-    });
-
-    // I add an event listener. When the user click on the profil button or anywhere else on the screen, the sub menu is no more active, so it disappear.
-    overlay.addEventListener('click', function() {
-        subItemsBox.classList.remove('active');
-        overlay.classList.remove('active');
-    })
-</script>
-```
-
 ### What did we learn ?
 
 This project gave me the opportunity to consolidate my knowledge in HTML, and develop my skills in CSS and more particularly responsive.
 
-I was also able to try Javascript, which really gave my project a real boost.
+I was also able to try Javascript, which really gave my project a nice addition.
+
+A true thanks for reading our ReadMe.md
+
+### Credits
+
+[LouisRvlE](https://github.com/LouisRvlE) : Louis Réville
+[Kimiruu](https://github.com/Kimiruu) : Kiara Drouin
+[K4mlna](https://github.com/K4mlna) : Tawan-François Asselain
