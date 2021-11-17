@@ -46,6 +46,7 @@ I decided to use a flexbox with the property display:flex for my body in order t
 - main
 
 And I divided the main section in two another parts :
+
     - feed (in the middle with the tweets)
     - aside (to the right with the suggests)
 
@@ -90,7 +91,7 @@ Then I decide for the main and the left part to use the `overflow-y: scroll`, so
 
 ### Responsive
 Tawan
-I decided to cut the responsive in 4 parts :
+I decided to cut the responsive in :
 1. Wider than 1282px : Everything is visible.
 2. Thinner than 1282px : Hide the text from the navigation part.
 3. Thinner than 1094px : Make the aside part responsive
@@ -107,8 +108,8 @@ I decided to cut the responsive in 4 parts :
 
 Robin
 I decided to cut the responsive in 4 parts :
-1. Wider than 1282px : Everything is visible.
-2. Thinner than 1282px : Hide the text from the navigation part.
+1. Wider than **1280px** : Everything is visible.
+2. Thinner than 1280px : Hide the text from the navigation part.
 3. Thinner than 1094px : Make the aside part responsive
     The width isn't fix anymore.
 4. Thinner than 1025px : Hide the aside part, and make the feed side fit the screen.
