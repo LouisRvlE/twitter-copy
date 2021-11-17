@@ -124,5 +124,7 @@ A true thanks for reading our ReadMe.md
 ### Credits
 
 [LouisRvlE](https://github.com/LouisRvlE) : Louis Réville
+
 [Kimiruu](https://github.com/Kimiruu) : Kiara Drouin
+
 [K4mlna](https://github.com/K4mlna) : Tawan-François Asselain
